@@ -1,0 +1,1238 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Galada', cursive;*/
+}
+main{
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    width: 75.8%;
+    margin: 0 auto;
+}
+
+
+/* ---- Welcome ----*/
+
+
+.welcome{
+    width: 100%;
+    min-height:800px ;
+    background: url("../img/bg-1.png") no-repeat center/cover;
+    text-align: center;
+}
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+.welcome-content span{
+    font-family: Galada;
+    display: inline-block;
+    margin-top: 240px;
+    padding-bottom: 0;
+    font-size: 3rem;
+}
+.welcome-content span:after{
+    content: "";
+    width: 40%;
+    border-top: 1px solid #ffffff;
+    display: block;
+    margin: 0 auto;
+}
+.welcome-content h1{
+    font-size: 7.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.welcome-content p{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.welcome-content .arrow-down{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 110px auto 50px auto;
+    position: relative;
+    opacity: 0.8;
+
+}
+.welcome-content .arrow-down img{
+    position: absolute;
+    top: 33%;
+    left: 35%;
+}
+
+nav .topnav{
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    border-top: 1px dashed #fff ;
+    margin-bottom: 85px;
+}
+nav .topnav a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+nav .icon{
+    display: none;
+}
+nav .icon a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+nav div a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/* ---- Our - Services ----*/
+
+
+.our-services{
+    min-height: 700px;
+    text-align: center;
+}
+.our-services-header{
+    display: flex;
+    flex-direction: column;
+}
+.our-services-header h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 100px;
+}
+.our-services-header p{
+    font-size: 1.1rem;
+    color: #999999;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.our-services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.our-services-cards .card{
+    flex-basis: 240px;
+}
+.our-services-cards .cards-img-services{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background: #999999;
+    text-align: center;
+    margin: 0 auto ;
+    font-size: 1.3rem;
+    color: white;
+}
+.our-services-cards h3{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 40px 0 40px 0;
+    border-bottom: 4px dashed #999999 ;
+    display: inline-block;
+}
+
+
+
+/* ---- Nec - Massa ----*/
+
+
+.nec-massa{
+    min-height: 200px;
+    background: url("../img/bg-2.png") no-repeat center/cover;
+}
+.nec-massa-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.nec-massa-content div{
+    margin-top: 50px;
+}
+.nec-massa-content div h2{
+    color: #e76122;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.nec-massa-content div p{
+    font-size: 1.1rem;
+    color: #cfd1d5;
+}
+.nec-massa-content button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #5dbdb1 ;
+    color: #ffffff;
+    /*margin-top: 150px;*/
+    margin: 100px 0 50px 0;
+}
+.nec-massa-content button:hover{
+    background: #e76122;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* ---- Awesome Portfolios ----*/
+
+
+.awesome-portfolios{
+    background: #f0f0f0;
+    min-height: 900px ;
+}
+.awesome-portfolios-content{
+    text-align: center;
+}
+.awesome-portfolios-content h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 100px;
+}
+.awesome-portfolios-content .awesome-navbar{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.awesome-portfolios-content .awesome-navbar a{
+    color: #999999;
+    text-decoration: none;
+    width: 100px;
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.awesome-portfolios-content .awesome-navbar .active{
+    background: #f2b63e;
+    color: #f0f0f0;
+}
+.awesome-portfolios-content .awesome-navbar a:hover{
+    background: #f2b63e;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.gallery .title-pic{
+    display: flex;
+    flex: 1 1;
+}
+.gallery .title-pic img{
+    flex: 1 0 ;
+}
+.gallery .sub-pic{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 470px;
+    flex: 1 0;
+}
+.gallery .sub-pic img{
+    flex: 1 0 230px;
+}
+.gallery .arrowLeft{
+    width: 50px;
+    height: 50px;
+    background: #5dbdb1;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: -10%;
+}
+.gallery .arrowLeft  img{
+    position: absolute;
+    top: 33%;
+    left: 28%;
+    box-shadow:none;
+}
+.gallery .arrowRight{
+    width: 50px;
+    height: 50px;
+    background: #5dbdb1;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    right: -10%;
+}
+.gallery .arrowRight  img{
+    position: absolute;
+    top: 33%;
+    right: 28%;
+    box-shadow:none;
+}
+
+.gallery .arrowLeft:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.gallery .arrowRight:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+
+/* ---- ABOUT- US ----*/
+
+.about-us{
+    background: url("../img/bg-3.png") no-repeat;
+    min-height: 800px;
+}
+.about-us-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+.about-left{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 430px;
+    margin-top: 160px;
+}
+.about-left h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    font-weight: 300;
+}
+.about-left img{
+    border: 7px solid #ffffff;
+    margin-bottom: 25px;
+}
+.about-left h3{
+    font-size: 1.5rem;
+    font-weight: 300 ;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+.about-left p{
+    margin-bottom: 50px;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+.about-left button{
+    width: 170px;
+    height: 50px;
+    color: #ffffff;
+    background: #5dbdb1;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+}
+.about-left button:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #e76122;
+    transition: 0.5s;
+}
+.about-right{
+    flex-basis: 430px;
+    display: flex;
+    flex-flow: column;
+    margin-top: 160px;
+}
+.about-right h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.about-right article{
+    display: flex;
+    margin-top: 50px ;
+}
+.about-right .why-img-container img{
+    margin-right: 10px;
+}
+.about-right h4{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.about-right p{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* ---- Parallax - Content ----*/
+
+.parallax{
+    min-height: 400px;
+    background: url("../img/bg-4.png");
+}
+
+.parallax-content{
+    text-align: center;
+}
+.parallax-content h1{
+    margin-top: 140px;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    color: #ffffff;
+    align-self: center;
+    font-weight: 500;
+}
+.parallax-content p{
+    align-self: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 20px 0 40px 0;
+}
+
+/* ---- Our - Team ---- */
+
+.our-team{
+    min-height: 750px;
+    background: #f0f0f0;
+}
+.our-team-content{
+    display: flex;
+    flex-flow: column;
+}
+.our-team-content h1{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.our-team-content p{
+    margin-bottom: 20px;
+    opacity: 0.5;
+    text-align: center;
+}
+.our-team-cards{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-evenly;
+}
+.our-team-cards .team-card{
+    margin-top: 50px;
+    flex-basis: 140px;
+    text-align: center;
+}
+.our-team-cards .team-card h4{
+    margin: 30px 0 10px 0 ;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.our-team-cards .team-card p{
+    font-size: 0.8rem;
+}
+.our-team-cards .team-icon{
+    justify-content: space-between;
+}
+.our-team-cards .team-icon img{
+    width: 30px;
+    border-radius: 50%;
+}
+.our-team-cards .team-icon img:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+/* ---- Clients - Testimonials ----*/
+
+.clients-testimonials{
+    min-height: 400px;
+    background: #5dbdb1;
+    color: #f0f0f0;
+}
+.clients-testimonials-content{
+    text-align: center;
+}
+.clients-testimonials-content h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.clients-testimonials-content img{
+    margin-bottom: 20px;
+}
+.clients-testimonials-content p {
+    max-width: 770px;
+    margin: 0 auto;
+
+}
+.testimo{
+    position: relative;
+}
+.testimo .testimo-arrL{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    top:-40%;
+    left: -5%;
+    cursor: pointer;
+}
+.testimo .testimo-arrL img{
+    position: absolute;
+    top: 34%;
+    left: 26%;
+}
+.testimo .testimo-arrR{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    left: 100%;
+    bottom:3%;
+    cursor: pointer;
+}
+.testimo .testimo-arrR img{
+    position: absolute;
+    top: 34%;
+    left: 28%;
+}
+.clients-testimonials-content .creator {
+    padding-top: 30px ;
+    font-size: 0.8rem;
+    padding-bottom: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+footer p{
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 4rem;
+    }
+    .welcome-content p{
+        font-size: 1.5rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 250px auto 50px auto;
+    }
+
+    /* ---- Our - Services ----*/
+
+    .our-services-header h1{
+        font-size: 2.2rem;
+    }
+    .our-services-cards  h3{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---- Nec - Massa ----*/
+
+    .nec-massa-content div h2{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .nec-massa-content div p{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .nec-massa-content button{
+        margin: 60px 0 50px 0;
+    }
+
+    /* ---- Awesome Portfolios ---- */
+
+    .awesome-portfolios-content{
+        margin-bottom: 100px;
+    }
+    .awesome-portfolios-content h1{
+        font-size: 2rem ;
+    }
+    .awesome-portfolios-content .awesome-navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .awesome-portfolios-content .awesome-navbar a{
+        margin-top: 20px;
+    }
+    .arrowRight, .arrowLeft{
+        display: none;
+    }
+
+    .gallery .title-pic img{
+        height: 230px;
+        flex-grow: 1;
+    }
+
+    /* ---- About US -----  */
+
+    .about-left {
+        margin-top: 80px;
+    }
+
+    .about-left{
+        text-align: center;
+    }
+    .about-right{
+        margin-top: 80px;
+    }
+    .about-right h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .about-right h4{
+        font-size: 1.1rem;
+    }
+    .about-right .why-img-container{
+        align-self: center;
+    }
+
+    /* ---- Parallax - Content -----  */
+
+    .parallax-content h1{
+        font-size: 1.1rem;
+    }
+    .parallax-content div{
+        margin-bottom: 150px;
+    }
+
+    /* ----- Clients -----    */
+    .clients-testimonials-content h1{
+        font-size: 2rem;
+    }
+    .creator{
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 360px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 4rem;
+    }
+    .welcome-content p{
+        font-size: 1.5rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 330px auto 150px auto;
+    }
+
+    /* ---- Our - Services ----*/
+
+    .our-services-header h1{
+        font-size: 2.2rem;
+    }
+    .our-services-cards  h3{
+        font-size: 1.5rem;
+    }
+    .our-services-cards p{
+        font-size: 1.1rem;
+    }
+
+
+    /* ---- Nec - Massa ----*/
+
+    .nec-massa-content div h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nec-massa-content div p{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .nec-massa-content button{
+        margin: 60px 0 50px 0;
+    }
+
+    /* ---- Awesome - Portfolios -----*/
+    .gallery{
+        margin-bottom: 150px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 360px){
+    /* ---- Awesome Portfolios ---- */
+
+    .awesome-portfolios-content h1{
+        font-size: 2rem ;
+    }
+    .awesome-portfolios-content .awesome-navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .awesome-portfolios-content .awesome-navbar a{
+        margin-top: 20px;
+    }
+    .arrowRight, .arrowLeft{
+        display: none;
+    }
+    /*.gallery .title-pic{*/
+    /*    flex-grow: 1;*/
+    /*}*/
+    .gallery .title-pic img{
+        height: 230px;
+        flex-grow: 1;
+    }
+
+    /* ---- About US -----  */
+
+    .about-left {
+        margin-top: 80px;
+    }
+    .about-left img{
+        max-width: 340px;
+    }
+    .about-left{
+        text-align: center;
+    }
+    .about-right{
+        margin-top: 80px;
+    }
+    .about-right h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .about-right h4{
+        font-size: 1.1rem;
+    }
+    .about-right .why-img-container{
+        align-self: center;
+    }
+
+    /* ---- Clients -----    */
+    .clients-testimonials-content h1{
+        font-size: 2rem;
+    }
+    .creator{
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 375px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 4rem;
+    }
+    .welcome-content p{
+        font-size: 1.5rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 350px auto 150px auto;
+    }
+
+    /* ---- Nec - Massa ----*/
+
+    .nec-massa-content div h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nec-massa-content div p{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .nec-massa-content button{
+        margin: 60px 0 50px 0;
+    }
+
+    /* ---- About US -----  */
+
+    .about-left {
+        margin-top: 80px;
+    }
+
+    .about-left{
+        text-align: center;
+    }
+    .about-right{
+        margin-top: 80px;
+    }
+    .about-right h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .about-right h4{
+        font-size: 1.1rem;
+    }
+    .about-right .why-img-container{
+        align-self: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 405px){
+    .about-left img{
+        max-width: 300px;
+    }
+    .clients-testimonials-content h1{
+        font-size: 2rem;
+    }
+    .creator{
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 411px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 1.7rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 4.5rem;
+    }
+    .welcome-content p{
+        font-size: 1.7rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 400px auto 50px auto;
+    }
+    nav .icon{
+        margin-top: 150px;
+    }
+
+    /* ---- Our - Services ----*/
+
+
+    /* ---- About US -----  */
+
+    .about-left {
+        margin-top: 80px;
+    }
+
+    .about-left{
+        text-align: center;
+    }
+    .about-right{
+        margin-top: 80px;
+    }
+    .about-right h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .about-right h4{
+        font-size: 1.5rem;
+    }
+    .about-right .why-img-container{
+        align-self: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 414px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 1.7rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 4.5rem;
+    }
+    .welcome-content p{
+        font-size: 1.7rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 400px auto 50px auto;
+    }
+    nav .icon{
+        margin-top: 150px;
+    }
+
+    /* ---- Our - Services ----*/
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    /* ---- Awesome Portfolios ---- */
+
+    .awesome-portfolios-content h1{
+        font-size: 2rem ;
+    }
+    .awesome-portfolios-content .awesome-navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .awesome-portfolios-content .awesome-navbar a{
+        margin-top: 20px;
+    }
+    .arrowRight, .arrowLeft{
+        display: none;
+    }
+    .gallery .title-pic img{
+        height: 230px;
+        flex-grow: 1;
+    }
+
+    /* ---- Our Team ----    */
+    .our-team-content h1{
+        font-size: 2rem;
+    }
+    .our-team-content p{
+        text-align: center;
+    }
+    .team-card{
+        text-align: center;
+    }
+    .team-icon{
+        margin-bottom: 50px;
+    }
+
+    /*  ---- Clients -----   */
+    .clients-testimonials-content h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 620px){
+    /*.gallery{*/
+    /*    flex-direction: column;*/
+    /*}*/
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+    /* ----  Welcome ----*/
+
+    .welcome-content span{
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+    .welcome-content h1{
+        font-size: 7.5rem;
+    }
+    .welcome-content p{
+        font-size: 3rem;
+    }
+    .welcome-content .arrow-down{
+        margin: 400px auto 50px auto;
+    }
+    nav .icon{
+        margin-top: 150px;
+    }
+    nav .topnav a{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---- Our - Services ----*/
+
+    .our-services-header h1{
+        font-size: 3rem;
+    }
+    .our-services-header p{
+        font-size: 1.1rem;
+    }
+    .our-services-cards  h3{
+        font-size: 1.8rem;
+    }
+    .our-services-cards p{
+        font-size: 1.2rem;
+    }
+
+
+    /* ---- Nec - Massa ----*/
+
+    .nec-massa-content div h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .nec-massa-content div p{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .nec-massa-content button{
+        margin: 60px 0 50px 0;
+    }
+
+    /*!* ---- Awesome Portfolios ---- *!*/
+
+    /*.awesome-portfolios-content h1{*/
+    /*    font-size: 2rem ;*/
+    /*}*/
+    /*.awesome-portfolios-content .awesome-navbar{*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.awesome-portfolios-content .awesome-navbar a{*/
+    /*    margin-top: 20px;*/
+    /*}*/
+    /*.arrowRight, .arrowLeft{*/
+    /*    display: none;*/
+    /*}*/
+    /*.gallery .title-pic{*/
+    /*    flex-grow: 1;*/
+    /*}*/
+    /*.gallery .title-pic img{*/
+    /*    !*height: 230px;*!*/
+    /*    flex-grow: 1;*/
+    /*}*/
+}
+
+
+
+
+@media screen and (max-width: 950px){
+
+    /* ---- Our Service ----*/
+    .our-services-cards{
+        flex-direction: column;
+    }
+    .our-services-cards p{
+        margin-bottom: 70px;
+    }
+
+    .nec-massa-content {
+        flex-direction: column;
+    }
+
+    /* ---- Parallax - Content -----  */
+
+    .parallax-content h1{
+        font-size: 1rem;
+    }
+
+
+    .testimo-arrL{
+        display: none;
+    }
+    .testimo-arrR{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    /* ----  Welcome ----*/
+
+    /*.welcome-content h1{*/
+
+    /*}*/
+    /*.welcome-content p{*/
+
+    /*}*/
+    /*.welcome-content .arrow-down{*/
+
+    /*}*/
+    nav .topnav{
+        flex-direction: column;
+        width: 100%;
+        border-top: none;
+    }
+    nav .topnav a{
+        display: none;
+    }
+    nav .icon{
+        display: block;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    nav  .responsive a{
+        display: block;
+        padding-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    /* ---- Our - Services ----*/
+
+    .our-services-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-services-cards p{
+        margin-bottom: 50px;
+    }
+    .our-services-cards{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+
+
+    /* ---- ABOUT- US ----*/
+    .about-us-content{
+        justify-content: center;
+    }
+    .about-left h1{
+        align-self: center;
+    }
+    .about-left button{
+        align-self: center;
+    }
+
+    .about-right{
+        margin-bottom: 100px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+    /* ---- Welcome ----*/
+    nav .topnav a{
+        font-size: 1.2rem;
+    }
+
+
+    /* ---- Our - Services ----*/
+    .our-services-cards  h3{
+        font-size: 1.8rem;
+    }
+    .our-services-cards p{
+        font-size: 1.2rem;
+    }
+
+    /* ---- Nec - Massa ----*/
+
+    .nec-massa-content button{
+        margin: 100px 0 50px 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1039px ){
+
+
+    /* ---- About - Content -----*/
+    .about-left{
+        margin: 100px auto;
+
+    }
+    .about-left button{
+        align-self: center;
+    }
+    .about-right{
+        margin: 100px auto;
+    }
+
+    /* ---- Parallax - Content -----  */
+
+    .parallax-content h1{
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1068px){
+    .our-team-cards{
+        flex-flow: column ;
+    }
+    .our-team-cards .team-icon{
+       margin-bottom: 50px;
+    }
+}
